@@ -3,8 +3,8 @@ app Disbursement, diperuntukan melakukan process dibursement dan melakukan check
 Disini saya menggunakan DB h2 untuk menyimpan datanya. 
 
 ## Requirement
-Java 11
-Postman
+* Java 11
+* Postman
 
 How To Run
 - java -jar result/test-flip.jar
