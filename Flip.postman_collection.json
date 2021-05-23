@@ -1,0 +1,87 @@
+{
+	"info": {
+		"_postman_id": "3350f98b-d484-4c93-9069-c827295dfcd9",
+		"name": "Flip",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "TestDisburse",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/client/disbursement?bank_code=bni&account_number=1234567890&amount=10000&remark=sample remark",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"client",
+						"disbursement"
+					],
+					"query": [
+						{
+							"key": "bank_code",
+							"value": "bni"
+						},
+						{
+							"key": "account_number",
+							"value": "1234567890"
+						},
+						{
+							"key": "amount",
+							"value": "10000"
+						},
+						{
+							"key": "remark",
+							"value": "sample remark"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "TestCheckStatusDisburse",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/client/disbursement/5535152564",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"client",
+						"disbursement",
+						"5535152564"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "TestStatus",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/client/disburse/test/5535152564",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"client",
+						"disburse",
+						"test",
+						"5535152564"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
